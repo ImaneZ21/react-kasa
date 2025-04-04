@@ -6,7 +6,7 @@ function Cards({ accomodations }) {
     <>
       <div className="cards">
         {accomodations.map((data) => (
-          <img src={data.pictures[0]} alt={data.title} />
+          <Card key={data.id} pictures={data.pictures} title={data.title} />
         ))}
       </div>
     </>
@@ -14,4 +14,3 @@ function Cards({ accomodations }) {
 }
 
 export default Cards;
-//foreach. Il appelle juste le composant card

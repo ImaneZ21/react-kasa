@@ -1,11 +1,12 @@
 import "../Cards/card.scss"
 
-function Card() {
+function Card( {pictures, title}) {
 
     return (
       <>
         <div className="card">
-          <div>card </div>
+        <img src={pictures[0]} alt={title} />
+        <p>{title}</p>
         </div>
       </>
     );
