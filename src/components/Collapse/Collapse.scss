@@ -1,0 +1,32 @@
+details {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 0.5em;
+    background-color: #FF5A5F;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    padding-right: 20px;
+    color: white;
+}
+
+summary::after {
+    content: ">";
+    position: absolute;
+    font-weight: bold;
+    right: 0;
+    transition: transform 0.3s ease;
+}
+
+p {
+    color: white;
+}
+
+details[open] summary::after {
+    transform: rotate(90deg);
+}
