@@ -1,7 +1,9 @@
-function Error () {
+import Error from "../components/Error/Error.jsx";
+
+function ErrorPage () {
     return (
-        <div>test erreur</div>
+        <Error/>
     )
 }
 
-export default Error;
+export default ErrorPage;

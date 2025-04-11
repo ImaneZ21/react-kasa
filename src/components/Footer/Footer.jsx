@@ -1,9 +1,12 @@
-function Footer(){
-    return (
-        <footer>
-            <div>test footer</div>
-        </footer>
-    )
+
+function Footer() {
+  return (
+    <footer>
+      <div className="footer">
+        
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;

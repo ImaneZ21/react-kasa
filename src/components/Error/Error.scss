@@ -1,0 +1,23 @@
+@use "../../assets/scss/__colors.scss" as *; 
+
+.errorClass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p{
+        color: $main-color;
+    }
+    
+}
+
+.main{
+    font-size: 200px;
+
+}
+
+.title{
+    font-size: 20px;
+
+}

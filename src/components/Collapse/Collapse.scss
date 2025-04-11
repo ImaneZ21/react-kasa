@@ -1,9 +1,11 @@
+@use "../../assets/scss/__colors.scss" as *; 
+
 details {
     border: 1px solid #ccc;
     border-radius: 10px;
     margin: 30px;
     padding: 0.5em;
-    background-color: #FF5A5F;
+    background-color: $main-color;
 }
 
 summary {
@@ -12,7 +14,7 @@ summary {
     display: flex;
     position: relative;
     padding-right: 20px;
-    color: white;
+    color: $white;
 }
 
 summary::after {
@@ -24,8 +26,9 @@ summary::after {
 }
 
 p {
-    color: white;
+    color: $white;
 }
+
 
 details[open] summary::after {
     transform: rotate(90deg);
