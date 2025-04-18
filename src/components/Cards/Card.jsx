@@ -1,14 +1,14 @@
 import "../Cards/card.scss";
 import { useNavigate } from "react-router-dom";
 
-function Card({ pictures, title, id }) {
+function Card({ cover, title, id }) {
 
   const navigate = useNavigate()
 
   return (
     <>
       <div className="card">
-        <img src={pictures[0]} alt={title}  onClick={()=> navigate(`/accommodation/${id}`)}/>
+        <img src={cover} alt={title}  onClick={()=> navigate(`/accomodation/${id}`)}/>
         <p>{title}</p>
       </div>
     </>
