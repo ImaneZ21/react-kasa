@@ -1,5 +1,7 @@
 import Slideshow from "../components/Slideshow/Slideshow";
 import Collapse from "../components/Collapse/Collapse";
+import Location from "../components/Location/Location";
+import Tags from "../components/Tags/Tags";
 import Profil from "../components/Profil/Profil";
 import Rating from "../components/Rating/Rating";
 import Error from "../components/Error/Error";
@@ -31,6 +33,8 @@ function Accomodation() {
   return (
     <div>
       <Slideshow pictures={accomodation.pictures} title={accomodation.title} />
+      <Location location={accomodation.location} />
+      <Tags tags={accomodation.tags} />
       <Profil
         name={accomodation.host.name}
         picture={accomodation.host.picture}
