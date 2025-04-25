@@ -1,11 +1,16 @@
-import './location.scss'
+import "./location.scss";
 
-function location( {location} ) {
-    return(
-        <div className="location">
-                <p>{location}</p>
-        </div>
-    ); 
+function location({ location, title }) {
+  return (
+    <>
+      <div class="title">
+        <p>{title}</p>
+      </div>
+      <div className="location">
+        <p>{location}</p>
+      </div>
+    </>
+  );
 }
 
 export default location;

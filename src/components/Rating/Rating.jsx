@@ -6,9 +6,9 @@ function rating({ rating }) {
 
   for (let i = 0; i < 5; i++) {
     if (i < rating) {
-      stars.push(<FontAwesomeIcon icon={faStar} key={i} color="pink" />);
+      stars.push(<FontAwesomeIcon icon={faStar} key={i} className="colored-star" />);
     } else {
-      stars.push(<FontAwesomeIcon icon={faStar} key={i} color="gray" />);
+      stars.push(<FontAwesomeIcon icon={faStar} key={i} className="empty-star" />);
     }
   }
 

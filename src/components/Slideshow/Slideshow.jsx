@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "./Slideshow.scss";
+import angleLeft from "../../assets/angle_left.svg";
+import angleRight from "../../assets/angle_right.svg";
+
 
 function Slideshow({ pictures, title }) {
   const [index, setIndex] = useState(0);
@@ -14,21 +17,28 @@ function Slideshow({ pictures, title }) {
 
   return (
     <>
-    <div className="slidesshow">
-      <img src={pictures[index]} alt={title}></img>
-      {pictures.length > 1 && (
-        <>
-          <button onClick={previousPictures}>-</button>
-          <button onClick={nextPictures}>+</button>
-          <p>
-            {index +1}/ {pictures.length}
-          </p>
-        </>
-      )}
-    </div>
-    <div class="title">
-        <p>{title}</p>
-    </div>
+      <div className="slidesshow">
+        <img src={pictures[index]} alt={title} className="pictures"/>
+        {pictures.length > 1 && (
+          <>
+            <img
+              onClick={previousPictures}
+              src={angleLeft}
+              className="previousPictures"
+              alt="image précédente"
+            />
+             <img
+              onClick={nextPictures}
+              src={angleRight}
+              className="nextPictures"
+              alt="image suivante"
+            />
+            <p>
+              {index + 1}/ {pictures.length}
+            </p>
+          </>
+        )}
+      </div>
     </>
   );
 }

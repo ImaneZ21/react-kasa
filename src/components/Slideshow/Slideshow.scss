@@ -2,13 +2,42 @@
 
 .slidesshow {
 
-    p {
-        color: black;
-    }
-}
+    margin-top: -60px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 
-.title {
-    p{
-        color: black;
+    p {
+        color: $white;
+        position: relative;
+        top: -220px;
     }
+
+    .pictures {
+        height: 400px;
+        width: 90%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+
+    .previousPictures {
+        height: 80px;
+        position: relative;
+        z-index: 1;
+        top: -250px;
+        left: -600px;
+        cursor: pointer;
+    }
+
+    .nextPictures {
+        height: 80px;
+        position: relative;
+        top: -330px;
+        right: -600px;
+        cursor: pointer;
+    }
+
 }

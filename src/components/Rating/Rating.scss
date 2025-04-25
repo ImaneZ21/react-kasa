@@ -1,0 +1,5 @@
+@use "../../assets/scss/__colors.scss" as *; 
+
+.colored-star {
+    color: $main-color;
+}

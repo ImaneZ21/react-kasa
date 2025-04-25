@@ -33,7 +33,7 @@ function Accomodation() {
   return (
     <div>
       <Slideshow pictures={accomodation.pictures} title={accomodation.title} />
-      <Location location={accomodation.location} />
+      <Location location={accomodation.location} title={accomodation.title} />
       <Tags tags={accomodation.tags} />
       <Profil
         name={accomodation.host.name}
