@@ -8,6 +8,7 @@ import Error from "../components/Error/Error";
 import { useParams } from "react-router-dom";
 import data from "../data/accomodations.json";
 
+
 function Accomodation() {
   const { id } = useParams();
 
@@ -31,16 +32,27 @@ function Accomodation() {
   ];
 
   return (
-    <div>
+    <div className="accomodation">
       <Slideshow pictures={accomodation.pictures} title={accomodation.title} />
-      <Location location={accomodation.location} title={accomodation.title} />
-      <Tags tags={accomodation.tags} />
-      <Profil
-        name={accomodation.host.name}
-        picture={accomodation.host.picture}
-      />
-      <Rating rating={accomodation.rating} />
-      <Collapse aboutList={aboutList} />
+      <div className="accomodation-info">
+        <div className="left">
+          <Location
+            location={accomodation.location}
+            title={accomodation.title}
+          />
+          <Tags tags={accomodation.tags} />
+        </div>
+        <div className="right">
+          <Profil
+            name={accomodation.host.name}
+            picture={accomodation.host.picture}
+          />
+          <Rating rating={accomodation.rating} />
+        </div>
+      </div>
+      <div className="accomodation-collapse">
+        <Collapse aboutList={aboutList} />
+      </div>
     </div>
   );
 }

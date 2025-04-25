@@ -1,13 +1,46 @@
-@use "../../assets/scss/__colors.scss" as *; 
+@use "../../assets/scss/__colors.scss" as *;
 
-.location{
-    p{
-        color: black;
-    }
+.accomodation-info {
+    display: flex;
+    flex-direction: row;
+    margin-top: -180px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.title-location {
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
     p {
-        color: $black;
+        color: $main-color;
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
     }
 }
+
+.location {
+    p {
+        color: $black;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .accomodation-info {
+      flex-direction: column;
+  
+      .left-column, .right-column {
+        max-width: 100%;
+        align-items: flex-start;
+      }
+  
+      .right-column {
+        align-items: flex-start;
+        margin-top: 20px;
+      }
+    }
+  }

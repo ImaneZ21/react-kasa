@@ -4,7 +4,7 @@ function Profil({ name, picture }) {
   return (
     <div className="profil">
       <img src={picture} alt={name}></img>
-      <p>{name}</p>
+      <p className="profil-name">{name}</p>
     </div>
   );
 }

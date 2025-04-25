@@ -33,7 +33,7 @@ function Slideshow({ pictures, title }) {
               className="nextPictures"
               alt="image suivante"
             />
-            <p>
+            <p className="length">
               {index + 1}/ {pictures.length}
             </p>
           </>

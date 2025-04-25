@@ -1,7 +1,22 @@
 @use "../../assets/scss/__colors.scss" as *;
 
 .profil {
-    p {
-        color: black;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+
+    .profil-name {
+
+        text-align: right;
+        color: $main-color;
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
     }
 }

@@ -1,35 +1,43 @@
-@use "../../assets/scss/__colors.scss" as *; 
+@use "../../assets/scss/__colors.scss" as *;
 
-details {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin: 30px;
-    padding: 0.5em;
-    background-color: $main-color;
-}
-
-summary {
-    list-style: none;
-    cursor: pointer;
+.about {
     display: flex;
-    position: relative;
-    padding-right: 20px;
-    color: $white;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 70%;
+    gap: 30px;
+
+    details {
+        border-radius: 20px;
+
+        summary {
+            background-color: $main-color;
+            color: white;
+            padding: 15px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            background-image: url('../../assets/angle_up.svg');
+            background-repeat: no-repeat;
+            background-position: right 20px center;
+            background-size: 20px;
+        }
+
+        p {
+            color: black;
+            padding: 15px 20px;
+        }
+       
+
+    }
 }
 
-summary::after {
-    content: ">";
-    position: absolute;
-    font-weight: bold;
-    right: 0;
-    transition: transform 0.3s ease;
+
+details[open] summary {
+    background-image: url('../../assets/angle_down.svg');
 }
 
-p {
-    color: $white;
-}
-
-
-details[open] summary::after {
-    transform: rotate(90deg);
-}
+.accomodation-collapse {
+   
+  }

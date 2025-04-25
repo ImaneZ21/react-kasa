@@ -1,5 +1,16 @@
+@use "../../assets/scss/__colors.scss" as *; 
+
 .tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
     p{
-        color:black;
+        background-color: $main-color;
+        color: white;
+        border-radius: 15px;
+        padding: 5px 15px;
+        font-size: 14px;
+        gap: 10px;
     }
 }
