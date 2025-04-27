@@ -5,7 +5,7 @@ import data from "../data/accomodations.json";
 
 function Home() {
   //Banner
-  const title = "Chez vous, partout et ailleurs";
+  const title = "Chez vous, \npartout et ailleurs";
   const alt = "Banner Kasa";
 
   //Cards

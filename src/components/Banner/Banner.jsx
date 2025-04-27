@@ -6,7 +6,7 @@ function Banner({ imageSrc, title, alt }) {
     <>
       <div className="banner">
         <img src={imageSrc} alt={alt}></img>
-        <div>{title} </div>
+        <div>{title}</div>
       </div>
     </>
   );
