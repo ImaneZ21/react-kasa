@@ -3,12 +3,12 @@
 .about {
     display: flex;
     flex-direction: column;
-    margin: 20px auto;
+    margin: 50px auto;
     width: 70%;
     gap: 30px;
 
     details {
-        border-radius: 20px;
+        // border-radius: 20px;
 
         summary {
             background-color: $main-color;
@@ -22,9 +22,13 @@
             background-repeat: no-repeat;
             background-position: right 20px center;
             background-size: 20px;
+            border-radius: 5px;
+
         }
 
         p {
+            background-color: $light-grey;
+            margin-top: 0;
             color: black;
             padding: 15px 20px;
         }
@@ -38,6 +42,8 @@ details[open] summary {
     background-image: url('../../assets/angle_down.svg');
 }
 
-.accomodation-collapse {
-   
+@media screen and (max-width: 768px) {
+ .about{
+    width: 95%;
+ }
   }

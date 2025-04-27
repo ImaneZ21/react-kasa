@@ -9,14 +9,18 @@ import Footer from "../components/Footer/Footer";
 function AppRouter() {
   return (
       <Router>
+          <div className="page-wrapper">
         <Header />
+        <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/accomodation/:id" element={<Accomodation />} />
           <Route path="*" element={<Errors />} />
         </Routes>
+        </main>
         <Footer />
+        </div>
       </Router>
   );
 }

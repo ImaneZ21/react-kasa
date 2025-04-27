@@ -24,8 +24,8 @@ footer{
 @media (max-width: 768px) {
     .footer {
         display: flex;
-        flex-direction: column; /* Stack verticalement */
-        text-align: center; /* Centrer le texte */
+        flex-direction: column;
+        text-align: center;
     }
 
     .footer p span {
