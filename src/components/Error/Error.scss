@@ -1,23 +1,30 @@
-@use "../../assets/scss/__colors.scss" as *; 
+@use "../../assets/scss/__colors.scss" as *;
 
-.errorClass{
+.error {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 100px;
 
-    p{
+    p {
         color: $main-color;
+        margin: 0;
     }
-    
-}
 
-.main{
-    font-size: 200px;
+    .error-number {
+        margin-top: 50px !important;
+        font-size: 200px;
+        font-weight: 900;
+    }
 
-}
+    .error-title {
+        font-size: 30px;
+        font-weight: bold;
+    }
 
-.title{
-    font-size: 20px;
+    a {
+        color: $black;
+    }
 
 }
