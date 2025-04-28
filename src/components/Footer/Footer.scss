@@ -1,22 +1,22 @@
 @use "../../assets/scss/__colors.scss" as *;
 
-footer{
+footer {
     margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $black;
 
-    img{
+    img {
         padding-top: 20px;
         padding-left: 20px;
     }
 
-    p{
+    p {
         color: $white;
     }
 
-    p span{
+    p span {
         display: inline;
     }
 }
@@ -31,4 +31,4 @@ footer{
     .footer p span {
         display: block;
     }
-  }
+}

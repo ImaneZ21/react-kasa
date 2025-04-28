@@ -4,7 +4,7 @@
   display: flex;
   gap: 10px;
   font-size: 20px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .colored-star {
@@ -13,4 +13,11 @@
 
 .empty-star {
   opacity: 0.1;
+}
+
+@media (max-width: 768px) {
+  .rating {
+    font-size: 12px;
+    margin-top: 20px;
+  }
 }

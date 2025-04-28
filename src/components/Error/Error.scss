@@ -28,3 +28,18 @@
     }
 
 }
+
+
+@media screen and (max-width: 768px) {
+    .error{
+        .error-number {
+            font-size: 150px;
+        }
+    
+        .error-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 80px
+        }
+    }
+}

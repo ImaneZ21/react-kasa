@@ -35,16 +35,8 @@
             background-color: $light-grey;
             margin: 0;
             padding: 15px 20px;
-            color: black;
             list-style: none;
-
-          }
-        
-          li {
-            margin-bottom: 5px;
-          }
-
-
+        }
     }
 }
 
@@ -62,7 +54,7 @@ details[open] summary {
         margin-bottom: -20px;
     }
 
-    details{
+    details {
         flex: 1;
     }
 }
@@ -79,9 +71,23 @@ details[open] summary {
             margin: 5px auto;
             margin-bottom: -20px;
         }
-    
-        details{
+
+        details {
             flex: 1;
+
+            summary {
+                padding: 10px 20px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            ul {
+                font-size: 12px;
+
+            }
+
         }
     }
 }

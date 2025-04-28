@@ -1,14 +1,12 @@
 @use "../../assets/scss/__colors.scss" as *;
 
 .profil {
-
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
     gap: 10px;
 
     .profil-name {
-
         text-align: right;
         color: $main-color;
     }
@@ -18,5 +16,20 @@
         height: 60px;
         border-radius: 50%;
         object-fit: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .profil {
+        .profil-name {
+            font-size: 14px;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
     }
 }
