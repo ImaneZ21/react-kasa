@@ -8,8 +8,6 @@
     gap: 30px;
 
     details {
-        // border-radius: 20px;
-
         summary {
             background-color: $main-color;
             color: white;
@@ -32,7 +30,20 @@
             color: black;
             padding: 15px 20px;
         }
-       
+
+        ul {
+            background-color: $light-grey;
+            margin: 0;
+            padding: 15px 20px;
+            color: black;
+            list-style: none;
+
+          }
+        
+          li {
+            margin-bottom: 5px;
+          }
+
 
     }
 }
@@ -42,8 +53,35 @@ details[open] summary {
     background-image: url('../../assets/angle_down.svg');
 }
 
+.accomodation-collapse {
+    .about {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin: 5px auto;
+        margin-bottom: -20px;
+    }
+
+    details{
+        flex: 1;
+    }
+}
+
 @media screen and (max-width: 768px) {
- .about{
-    width: 95%;
- }
-  }
+    .about {
+        width: 95%;
+    }
+
+    .accomodation-collapse {
+        .about {
+            flex-direction: column;
+            width: 90%;
+            margin: 5px auto;
+            margin-bottom: -20px;
+        }
+    
+        details{
+            flex: 1;
+        }
+    }
+}

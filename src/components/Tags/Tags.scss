@@ -2,8 +2,8 @@
 
 .tags{
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
+    margin-top: -10px;
     
     p{
         background-color: $main-color;
@@ -12,5 +12,14 @@
         padding: 5px 15px;
         font-size: 14px;
         gap: 10px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .tags{
+        p{
+            font-size: 11px;
+        }
     }
 }

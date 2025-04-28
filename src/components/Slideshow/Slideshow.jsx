@@ -17,7 +17,7 @@ function Slideshow({ pictures, title }) {
 
   return (
     <>
-      <div className="slidesshow">
+      <div className="slideshow">
         <img src={pictures[index]} alt={title} className="pictures"/>
         {pictures.length > 1 && (
           <>

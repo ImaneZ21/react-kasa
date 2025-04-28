@@ -1,12 +1,16 @@
-@use "../../assets/scss/__colors.scss" as *; 
-
-.colored-star {
-    color: $main-color;
-}
+@use "../../assets/scss/__colors.scss" as *;
 
 .rating {
-    display: flex;
-    gap: 10px;
-    font-size: 20px;
-    margin-top: 40px;
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.colored-star {
+  color: $main-color;
+}
+
+.empty-star {
+  opacity: 0.1;
 }
