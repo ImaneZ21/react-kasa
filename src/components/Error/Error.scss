@@ -1,25 +1,26 @@
 @use "../../assets/scss/__colors.scss" as *;
+@use "../../assets/scss/__layout.scss" as *;
 
 .error {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 100px;
+    gap: $gap-hundred;
 
     p {
         color: $main-color;
-        margin: 0;
+        margin: $margin-zero;
     }
 
     .error-number {
-        margin-top: 50px !important;
-        font-size: 200px;
+        margin-top: $margin-fifty !important;
+        font-size: $font-two-hundred;
         font-weight: 900;
     }
 
     .error-title {
-        font-size: 30px;
+        font-size: $font-thirty;
         font-weight: bold;
     }
 
@@ -33,13 +34,13 @@
 @media screen and (max-width: 768px) {
     .error{
         .error-number {
-            font-size: 150px;
+            font-size: $font-one-five-zero;
         }
     
         .error-title {
-            font-size: 20px;
+            font-size: $font-twenty;
             font-weight: bold;
-            margin-left: 80px
+            margin-left: $font-eighty;
         }
     }
 }

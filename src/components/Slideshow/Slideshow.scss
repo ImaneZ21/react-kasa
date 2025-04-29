@@ -1,4 +1,5 @@
 @use "../../assets/scss/__colors.scss" as *;
+@use "../../assets/scss/__layout.scss" as *;
 
 .slideshow {
     display: flex;
@@ -6,7 +7,7 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: $base-width;
 
     .length {
         color: $white;
@@ -15,14 +16,14 @@
     }
 
     .pictures {
-        height: 455px;
-        width: 100%;
+        height: $height-four-five-five;
+        width: $base-width;
         object-fit: cover;
-        border-radius: 30px;
+        border-radius: $border-thirty;
     }
 
     .previousPictures {
-        height: 80px;
+        height: $height-eighty;
         position: relative;
         top: -280px;
         left: -680px;
@@ -30,7 +31,7 @@
     }
 
     .nextPictures {
-        height: 80px;
+        height: $height-eighty;
         position: relative;
         top: -370px;
         right: -680px;
@@ -42,30 +43,30 @@
 @media screen and (max-width: 768px) {
 
     .slideshow {
-        width: 95%;
-        margin-left: 10px;
+        width: $width-ninety-five;
+        margin-left: $margin-ten;
 
         .length {
             color: $white;
             position: relative;
             top: -150px;
         }
-    
+
 
         .pictures {
-            height: 290px !important;
+            height: $height-two-ninety !important;
             object-fit: cover;
-            border-radius: 30px;
+            border-radius: $border-thirty;
         }
 
         .previousPictures {
-            height: 40px;
+            height: $height-forty;
             top: -160px;
             left: -160px;
         }
 
         .nextPictures {
-            height: 40px;
+            height: $height-forty;
             top: -200px;
             right: -160px;
         }

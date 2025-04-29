@@ -1,40 +1,41 @@
 @use "../../assets/scss/__colors.scss" as *;
+@use "../../assets/scss/__layout.scss" as *;
 
 .about {
     display: flex;
     flex-direction: column;
-    margin: 50px auto;
-    width: 70%;
-    gap: 30px;
+    margin: $margin-fifty auto;
+    width: $width-seventy;
+    gap: $gap-thirty;
 
     details {
         summary {
             background-color: $main-color;
-            color: white;
-            padding: 15px 20px;
+            color: $white;
+            padding: $padding-fifteen $padding-twenty;
             font-weight: bold;
             cursor: pointer;
             list-style: none;
             position: relative;
             background-image: url('../../assets/angle_up.svg');
             background-repeat: no-repeat;
-            background-position: right 20px center;
-            background-size: 20px;
-            border-radius: 5px;
+            background-position: right $background-twenty center;
+            background-size: $background-twenty;
+            border-radius: $border-five;
 
         }
 
         p {
             background-color: $light-grey;
-            margin-top: 0;
-            color: black;
-            padding: 15px 20px;
+            margin-top: $margin-zero;
+            color: $black;
+            padding: $padding-fifteen $padding-twenty;
         }
 
         ul {
             background-color: $light-grey;
-            margin: 0;
-            padding: 15px 20px;
+            margin: $margin-zero;
+            padding: $padding-fifteen $padding-twenty;
             list-style: none;
         }
     }
@@ -49,42 +50,38 @@ details[open] summary {
     .about {
         flex-direction: row;
         justify-content: space-around;
-        width: 100%;
-        margin: 5px auto;
-        margin-bottom: -20px;
+        width: $base-width;
+        margin: $margin-five auto;
+        margin-bottom: -$margin-twenty;
     }
 
     details {
-        flex: 1;
+        flex: $flex-one;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .about {
-        width: 95%;
-    }
-
     .accomodation-collapse {
         .about {
             flex-direction: column;
-            width: 90%;
-            margin: 5px auto;
-            margin-bottom: -20px;
+            width: $width-ninety-two;
+            margin: $margin-five auto;
+            margin-bottom: -$margin-twenty;
         }
 
         details {
-            flex: 1;
+            flex: $flex-one;
 
             summary {
-                padding: 10px 20px;
+                padding: $padding-ten $padding-twenty;
             }
 
             p {
-                font-size: 12px;
+                font-size: $font-twelve;
             }
 
             ul {
-                font-size: 12px;
+                font-size: $font-twelve;
 
             }
 

@@ -1,17 +1,18 @@
 @use "../../assets/scss/__colors.scss" as *; 
+@use "../../assets/scss/__layout.scss" as *; 
 
 .tags{
     display: flex;
-    gap: 10px;
-    margin-top: -10px;
+    gap: $gap-ten;
+    margin-top: -$gap-ten;
     
     p{
         background-color: $main-color;
-        color: white;
-        border-radius: 15px;
-        padding: 5px 15px;
-        font-size: 14px;
-        gap: 10px;
+        color: $white;
+        border-radius: $border-fifteen;
+        padding: $padding-five $padding-fifteen;
+        font-size: $font-forteen;
+        gap: $gap-ten;
     }
 }
 
@@ -19,7 +20,7 @@
 @media screen and (max-width: 768px) {
     .tags{
         p{
-            font-size: 11px;
+            font-size: $gap-eleven;
         }
     }
 }

@@ -1,31 +1,32 @@
 @use "../../assets/scss/__colors.scss" as *;
+@use "../../assets/scss/__layout.scss" as *;
 
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap: $gap-fifty;
     padding: 3rem;
     background-color: $light-grey;
     margin-top: 2%;
-    border-radius: 20px;
+    border-radius: $border-twenty;
 }
 
 .card {
-    border-radius: 10px;
+    border-radius: $border-ten;
     color: $light-grey;
-    width: 100%;
-    height: 350px;
+    width: $base-width;
+    height: $height-three-five-zero;
 
     img {
-        width: 100%;
-        height: 100%;
+        width: $base-width;
+        height: $base-height;
         object-fit: cover;
-        border-radius: 6px;
+        border-radius: $border-six;
     }
 
     p {
-        margin-top: -40px;
-        padding-left: 10px;
+        margin-top: -$margin-forty;
+        padding-left: $padding-ten;
         font-weight: bold;
         font-size: 14.4px;
     }

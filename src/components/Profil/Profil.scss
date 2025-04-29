@@ -1,10 +1,11 @@
 @use "../../assets/scss/__colors.scss" as *;
+@use "../../assets/scss/__layout.scss" as *;
 
 .profil {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    gap: 10px;
+    gap: $gap-ten;
 
     .profil-name {
         text-align: right;
@@ -13,7 +14,7 @@
 
     img {
         width: 60px;
-        height: 60px;
+        height: $height-sixty;
         border-radius: 50%;
         object-fit: cover;
     }
@@ -22,12 +23,12 @@
 @media (max-width: 768px) {
     .profil {
         .profil-name {
-            font-size: 14px;
+            font-size: $font-forteen;
         }
 
         img {
             width: 40px;
-            height: 40px;
+            height: $height-forty;
             border-radius: 50%;
             object-fit: cover;
         }

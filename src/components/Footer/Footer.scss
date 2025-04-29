@@ -1,15 +1,16 @@
 @use "../../assets/scss/__colors.scss" as *;
+@use "../../assets/scss/__layout.scss" as *;
 
 footer {
-    margin-top: 50px;
+    margin-top: $margin-fifty;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $black;
 
     img {
-        padding-top: 20px;
-        padding-left: 20px;
+        padding-top: $padding-twenty;
+        padding-left: $padding-twenty;
     }
 
     p {

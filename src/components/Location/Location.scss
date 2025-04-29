@@ -1,9 +1,11 @@
 @use "../../assets/scss/__colors.scss" as *;
+@use "../../assets/scss/__layout.scss" as *;
+
 
 .accomodation-info {
   display: flex;
   flex-direction: row;
-  margin-top: -180px;
+  margin-top: -$margin-one-eighty;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -16,7 +18,7 @@
 .title {
   p {
     color: $main-color;
-    font-size: 30px;
+    font-size: $font-thirty;
     margin: 0;
     padding: 0;
   }
@@ -33,11 +35,12 @@
   .accomodation-info {
     display: flex;
     flex-direction: column;
-    margin-top: -120px;
-    margin-left: 15px;
+    margin-top: -$margin-one-twenty;
+    margin-left: $margin-fifteen;
+    margin-right: $margin-twenty;
 
     .right {
-      width: 100%;
+      width: $base-width;
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
@@ -46,7 +49,7 @@
 
   .title {
     p {
-      font-size: 20px;
+      font-size: $font-twenty;
     }
   }
 }
