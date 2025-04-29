@@ -1,7 +1,6 @@
 import "./banner.scss";
 
 function Banner({ imageSrc, title, alt }) {
-
   return (
     <>
       <div className="banner">

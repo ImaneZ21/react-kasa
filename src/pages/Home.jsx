@@ -8,8 +8,6 @@ function Home() {
   const title = "Chez vous, \npartout et ailleurs";
   const alt = "Banner Kasa";
 
-  //Cards
-
   return (
     <>
       <Banner imageSrc={image} title={title} alt={alt} />

@@ -3,7 +3,6 @@ import "./Slideshow.scss";
 import angleLeft from "../../assets/angle_left.svg";
 import angleRight from "../../assets/angle_right.svg";
 
-
 function Slideshow({ pictures, title }) {
   const [index, setIndex] = useState(0);
 
@@ -18,7 +17,7 @@ function Slideshow({ pictures, title }) {
   return (
     <>
       <div className="slideshow">
-        <img src={pictures[index]} alt={title} className="pictures"/>
+        <img src={pictures[index]} alt={title} className="pictures" />
         {pictures.length > 1 && (
           <>
             <img
@@ -27,7 +26,7 @@ function Slideshow({ pictures, title }) {
               className="previousPictures"
               alt="image précédente"
             />
-             <img
+            <img
               onClick={nextPictures}
               src={angleRight}
               className="nextPictures"

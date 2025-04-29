@@ -8,7 +8,6 @@ import Error from "../components/Error/Error";
 import { useParams } from "react-router-dom";
 import data from "../data/accomodations.json";
 
-
 function Accomodation() {
   const { id } = useParams();
 

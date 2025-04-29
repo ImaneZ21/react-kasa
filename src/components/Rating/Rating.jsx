@@ -7,9 +7,13 @@ function rating({ rating }) {
 
   for (let i = 0; i < 5; i++) {
     if (i < rating) {
-      stars.push(<FontAwesomeIcon icon={faStar} key={i} className="colored-star" />);
+      stars.push(
+        <FontAwesomeIcon icon={faStar} key={i} className="colored-star" />
+      );
     } else {
-      stars.push(<FontAwesomeIcon icon={faStar} key={i} className="empty-star" />);
+      stars.push(
+        <FontAwesomeIcon icon={faStar} key={i} className="empty-star" />
+      );
     }
   }
 

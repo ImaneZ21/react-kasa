@@ -28,8 +28,6 @@ function Home() {
     },
   ];
 
-  //Cards
-
   return (
     <>
       <Banner imageSrc={image} alt={alt} />
